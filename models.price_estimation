@@ -1,0 +1,11 @@
+INFO:root:Loading model from price_estimation_model.pkl
+INFO:root:New data for prediction:    rating  bathrooms  year_built  bedrooms    size  latitude  longitude rentType
+0     4.5          2        2000         3  1200.5   40.7128    -74.006  monthly
+ERROR:root:Error during prediction: Found unknown categories ['monthly'] in column 0 during transform
+INFO:root:Loading model from price_estimation_model.pkl
+INFO:root:New data for prediction:    rating  bathrooms  year_built  bedrooms    size  latitude  longitude rentType
+0     4.5          2        2000         3  1200.5   40.7128    -74.006  monthly
+ERROR:root:Error during prediction: Found unknown categories ['monthly'] in column 0 during transform
+INFO:root:Loading model from price_estimation_model.pkl
+INFO:root:New data for prediction:    rating  bathrooms  year_built  bedrooms    size  latitude  longitude     rentType
+0     4.5          2        2000         3  1200.5   40.7128    -74.006  hostel rent

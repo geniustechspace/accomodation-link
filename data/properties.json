@@ -1,0 +1,983 @@
+{
+  "data": [
+    {
+      "price": "$800,000",
+      "image_prompt": "Create an image of a modern 5-bedroom house with a pool.",
+      "date": 1722879007576,
+      "rules": "No loud noises after 11pm.",
+      "rating": 4.7,
+      "features": [
+        "Pool",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "bathrooms": 4,
+      "year_built": 2017,
+      "name": "Modern 5-Bedroom House with a Pool",
+      "gpsPosition": { "long": 2.352222, "lat": 48.856614 },
+      "size": "4,000 sqft",
+      "rentType": "hostel rent",
+      "location": "2424 Pine St, Accra, Ghana",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F11a-min.png?alt=media&token=cf7669a1-fbe4-47ec-9fb3-d6ce59e19472",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F11b-min.png?alt=media&token=978f28dc-d394-4dc8-8461-8c9edfa45c98"
+      ],
+      "bedrooms": 5,
+      "id": "6nHxqAMiyvcXHuXQUU2I",
+      "rentStatus": "available",
+      "status": "accepted",
+      "comments": "The apartment is spacious and well-lit.",
+      "description": "This modern 5-bedroom house is perfect for those who love to swim. The house features a pool, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ]
+    },
+    {
+      "size": "3,500 sqft",
+      "price": "$750,000",
+      "id": "AxzREJIghCwf1vj79kBN",
+      "date": 1722879009108,
+      "image_prompt": "Create an image of a spacious 4-bedroom house with a large backyard.",
+      "comments": "Luxurious space with top-notch facilities.",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F4a-min.jpg?alt=media&token=18d8e46a-3ce0-48ef-8264-5a9b8986f326",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F4b-min.jpg?alt=media&token=f5538a7e-f85c-4bc8-8b66-34da8ca96953"
+      ],
+      "location": "1011 Pine St, Accra, Ghana",
+      "rentType": "hostel rent",
+      "gpsPosition": { "long": -0.127758, "lat": 51.507351 },
+      "bedrooms": 4,
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "rules": "No parties or events.",
+      "description": "This spacious 4-bedroom house is perfect for families who love to spend time outdoors. The house features a large backyard, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "rating": 4.9,
+      "name": "Spacious 4-Bedroom House with a Large Backyard",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "year_built": 2010,
+      "status": "accepted",
+      "bathrooms": 3,
+      "features": [
+        "Spacious living room",
+        "Fully equipped kitchen",
+        "Beautiful garden",
+        "Close to public transportation",
+        "Walking distance to restaurants and shops"
+      ],
+      "rentStatus": "available"
+    },
+    {
+      "image_prompt": "Create an image of a luxurious 7-bedroom house with a private pool.",
+      "year_built": 2021,
+      "size": "7,000 sqft",
+      "status": "accepted",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "comments": "Eco-friendly living with great community initiatives.",
+      "location": "3636 Pine St, Accra, Ghana",
+      "rentStatus": "available",
+      "bathrooms": 6,
+      "features": [
+        "Private pool",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "rules": "Recycling mandatory.",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F17a-min.jpeg?alt=media&token=e91ecba5-9c61-44d2-ade6-ef5333e298af",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F17b-min.jpeg?alt=media&token=76393575-34b2-416c-a2a3-ba9fcc28ef9d"
+      ],
+      "gpsPosition": { "lat": 45.501689, "long": -73.567256 },
+      "bedrooms": 7,
+      "rentType": "home rent",
+      "date": 1722879009693,
+      "description": "This luxurious 7-bedroom house is perfect for those who love to entertain. The house features a private pool, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "id": "FxgEUG2kaofRTxbn1hWq",
+      "price": "$1,500,000",
+      "rating": 4.6,
+      "name": "Luxury 7-Bedroom House with a Private Pool"
+    },
+    {
+      "status": "rejected",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FWhatsApp%20Image%202024-06-17%20at%2009.45.44_e140044d.jpg?alt=media&token=4142c0d0-9507-4e6d-99b4-cdc3fd741f4f",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FWhatsApp%20Image%202024-06-17%20at%2009.44.48_8897ef54.jpg?alt=media&token=5bbc1d11-a979-41d3-9b67-db5595c799ec",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FWhatsApp%20Image%202024-06-17%20at%2009.43.24_1aa66462.jpg?alt=media&token=83e9d3ad-880e-488d-94d4-7398cce82f7c",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FWhatsApp%20Image%202024-06-17%20at%2009.43.02_d78c0b6c.jpg?alt=media&token=537e616c-f24c-4443-9b13-573825facd29",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FWhatsApp%20Image%202024-06-17%20at%2009.42.12_1f5bb45c.jpg?alt=media&token=e33de1e0-ae77-4d1f-b126-03c37de6c350"
+      ],
+      "location": "Kokomlemle, Accra , Ghana",
+      "rentStatus": "available",
+      "price": "300",
+      "neighborhood": ["dsakjshdkallkaskjda", "dfjdskalkdasjkgsdfjkld"],
+      "features": [
+        "broad window ",
+        "free wifii",
+        "water and electricity is available"
+      ],
+      "date": 1722879010016,
+      "description": "hygienic and beautiful place to stay for comfortable  studies",
+      "rules": ["no pets allowed", "no noise ", "no smoking"],
+      "userId": "f8Sd3zEoHpbTPTKXN0lF99PWB4d2",
+      "createdAt": { "seconds": 1721209542, "nanoseconds": 261000000 },
+      "accommodation_type": "hostel rent",
+      "bathrooms": "1",
+      "neighboring_campus": "Sunyani Technical University (STU)",
+      "gpsPosition": { "long": -0.1998848, "lat": 5.6393728 },
+      "name": "Jeff hostel",
+      "amenities": ["dhsasjhasjklhasahs", "sadjdhsaklhasl"],
+      "bedrooms": "1",
+      "rentType": "hostel rent",
+      "size": "250",
+      "imageNames": [
+        "WhatsApp Image 2024-06-17 at 09.45.44_e140044d.jpg",
+        "WhatsApp Image 2024-06-17 at 09.44.48_8897ef54.jpg",
+        "WhatsApp Image 2024-06-17 at 09.43.24_1aa66462.jpg",
+        "WhatsApp Image 2024-06-17 at 09.43.02_d78c0b6c.jpg",
+        "WhatsApp Image 2024-06-17 at 09.42.12_1f5bb45c.jpg"
+      ],
+      "id": "GJsgSf4HzFyFx9wbuovU"
+    },
+    {
+      "gpsPosition": { "lat": 34.052234, "long": -118.243685 },
+      "features": [
+        "Large backyard",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "rentStatus": "rented",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F20a-min.jpeg?alt=media&token=9f22a0bd-067e-42c1-9cd9-9a88aaf56e0c",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F20b-min.jpeg?alt=media&token=cf8c10a5-30c2-4e9e-8ba2-f663168cacb5"
+      ],
+      "id": "Hx5K2GwlpvnhH9uKFDXh",
+      "image_prompt": "Create an image of a spacious 6-bedroom house with a large backyard.",
+      "bathrooms": 4,
+      "location": "4242 Oak St, Accra, Ghana",
+      "price": "$1,000,000",
+      "status": "accepted",
+      "rating": 4,
+      "size": "4,500 sqft",
+      "rentType": "hostel rent",
+      "comments": "The pool area is clean and well-maintained.",
+      "bedrooms": 6,
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "description": "This spacious 6-bedroom house is perfect for families who love to spend time outdoors. The house features a large backyard, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "year_built": 2016,
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "date": 1722879010419,
+      "name": "Spacious 6-Bedroom House with a Large Backyard",
+      "rules": "No pets in the pool area."
+    },
+    {
+      "image_prompt": "Create an image of a charming 3-bedroom house with a fireplace.",
+      "location": "3030 Pine St, Accra, Ghana",
+      "id": "Jvs0wu2L3JfMo58ffBUl",
+      "price": "$350,000",
+      "year_built": 2016,
+      "status": "accepted",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "rules": "No alterations or redecorations without consent.",
+      "features": [
+        "Fireplace",
+        "Fully equipped kitchen",
+        "Beautiful garden",
+        "Close to restaurants and shops"
+      ],
+      "rating": 4.2,
+      "rentType": "hostel rent",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F14a-min.png?alt=media&token=47cf155f-dffa-421b-8c95-c26a4d99cd46",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F14b-min.jpg?alt=media&token=4f6b8d85-7947-46d5-93e3-30ede6c9ca37"
+      ],
+      "name": "Charming 3-Bedroom House with a Fireplace",
+      "gpsPosition": { "lat": 52.367984, "long": 4.903561 },
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "date": 1722879011149,
+      "comments": "A quaint and charming place with a vintage feel.",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "rentStatus": "rented",
+      "description": "This charming 3-bedroom house is perfect for those who love to relax by the fire. The house features a fireplace, a fully equipped kitchen, and a beautiful garden. The house is also close to several restaurants and shops.",
+      "size": "2,000 sqft"
+    },
+    {
+      "rentStatus": "available",
+      "id": "M63CVkP9TDEyqtuzHJ8c",
+      "gpsPosition": { "lat": 37.774929, "long": -122.419418 },
+      "rules": "Balcony is off-limits after midnight.",
+      "year_built": 2013,
+      "bedrooms": 4,
+      "description": "This stunning 4-bedroom house is perfect for those who love a great view. The house features a beautiful view, a fully equipped kitchen, and a comfortable living room. The house is also close to several restaurants and shops.",
+      "bathrooms": 3,
+      "rating": 4.1,
+      "features": [
+        "Beautiful view",
+        "Fully equipped kitchen",
+        "Comfortable living room",
+        "Close to restaurants and shops"
+      ],
+      "date": 1722879011611,
+      "status": "accepted",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "price": "$700,000",
+      "size": "3,000 sqft",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F9a-min.png?alt=media&token=70e9b92c-8653-443a-9f65-b78dde89eca7",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F9b-min.png?alt=media&token=be0b930b-5bbc-4023-87b1-24ee9da5f12f"
+      ],
+      "image_prompt": "Create an image of a stunning 4-bedroom house with a great view.",
+      "location": "2020 Maple St, Accra, Ghana",
+      "rentType": "home rent",
+      "comments": "Breathtaking balcony view, especially at sunset.",
+      "name": "Stunning 4-Bedroom House with a View"
+    },
+    {
+      "comments": "Fantastic view and a great balcony space.",
+      "name": "Modern 4-Bedroom House with a Pool",
+      "description": "This modern 4-bedroom house is perfect for those who love to swim. The house features a pool, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F15a-min.png?alt=media&token=35cee6a8-4217-46a4-a55f-6a81daf592db",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F15b-min.png?alt=media&token=c42c2ea9-50d9-4d11-b0ce-652ea2f52940"
+      ],
+      "bathrooms": 3,
+      "gpsPosition": { "long": -3.70379, "lat": 40.416775 },
+      "rentStatus": "available",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "price": "$600,000",
+      "features": [
+        "Pool",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "date": 1722879012029,
+      "location": "3232 Elm St, Accra, Ghana",
+      "id": "RAD9t6IUm9GKGsRUquUK",
+      "rating": 4.8,
+      "image_prompt": "Create an image of a modern 4-bedroom house with a pool.",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "rules": "Balcony usage allowed until 10pm.",
+      "status": "accepted",
+      "bedrooms": 4,
+      "size": "3,000 sqft",
+      "year_built": 2015,
+      "rentType": "hostel rent"
+    },
+    {
+      "rentType": "home rent",
+      "features": [
+        "Rooftop deck",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "location": "1414 Oak St, Accra, Ghana",
+      "price": "$600,000",
+      "id": "RFyVJsPXKCnm6lF2f49j",
+      "image_prompt": "Create an image of a stylish 4-bedroom house with a rooftop deck.",
+      "rules": "Smoking allowed in designated areas.",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "bedrooms": 4,
+      "gpsPosition": { "long": 139.691711, "lat": 35.689487 },
+      "size": "3,000 sqft",
+      "rentStatus": "available",
+      "comments": "Vintage decor and a homely feel.",
+      "name": "Stylish 4-Bedroom House with a Rooftop Deck",
+      "date": 1722879012404,
+      "status": "rejected",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "rating": 4.3,
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F6a-min.png?alt=media&token=f8ffe240-eb46-46d5-9f32-edd8ef87669c",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F6b-min.png?alt=media&token=f2eb4308-5c76-48b4-9c98-c286fda86e7a"
+      ],
+      "year_built": 2014,
+      "description": "This stylish 4-bedroom house is perfect for those who love to entertain. The house features a rooftop deck, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "bathrooms": 3
+    },
+    {
+      "gpsPosition": { "long": 13.404954, "lat": 52.520008 },
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F8a-min.png?alt=media&token=29e2e421-ae92-4f58-825d-47efe793db25",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F8b-min.png?alt=media&token=49b998f3-9a32-4234-8883-cea122918a62"
+      ],
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "location": "1818 Elm St, Accra, Ghana",
+      "bedrooms": 3,
+      "comments": "Great value for the price, with all the essentials.",
+      "rentType": "hostel rent",
+      "size": "2,500 sqft",
+      "bathrooms": 2,
+      "rating": 4.2,
+      "image_prompt": "Create an image of a modern 3-bedroom house with a pool.",
+      "rentStatus": "available",
+      "name": "Modern 3-Bedroom House with a Pool",
+      "id": "Tw5ceopegxYN1jZEktbU",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "features": [
+        "Pool",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "date": 1722879012702,
+      "year_built": 2016,
+      "price": "$450,000",
+      "description": "This modern 3-bedroom house is perfect for those who love to swim. The house features a pool, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "status": "rejected",
+      "rules": "No overnight guests without prior notice."
+    },
+    {
+      "image_prompt": "Create an image of a charming 2-bedroom house with a beautiful garden.",
+      "date": 1722879013028,
+      "bedrooms": 2,
+      "comments": "Resort-like feel with a fantastic pool area.",
+      "rentStatus": "available",
+      "rules": "Use of pool area until 10pm.",
+      "features": [
+        "Beautiful garden",
+        "Fully equipped kitchen",
+        "Comfortable living room",
+        "Close to restaurants and shops"
+      ],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F10a-min.png?alt=media&token=855e2639-42dc-4c41-9e4d-b0c1806fb725",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F10b-min.png?alt=media&token=2c633738-cf3c-4a7a-b6f4-bf64abb6879b"
+      ],
+      "size": "1,500 sqft",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "id": "WAcBJ2B9EMxJF7mo0hCl",
+      "location": "2222 Oak St, Accra, Ghana",
+      "rentType": "home rent",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "year_built": 2011,
+      "price": "$300,000",
+      "rating": 4,
+      "name": "Charming 2-Bedroom House with a Garden",
+      "description": "This charming 2-bedroom house is perfect for those who love to relax in the garden. The house features a beautiful garden, a fully equipped kitchen, and a comfortable living room. The house is also close to several restaurants and shops.",
+      "gpsPosition": { "long": 151.20929, "lat": -33.86882 },
+      "bathrooms": 1,
+      "status": "rejected"
+    },
+    {
+      "gpsPosition": { "lat": 7.3531993, "long": -2.3368008 },
+      "description": "11111@111",
+      "location": "Sowutuom, Accra , Ghana",
+      "amenities": ["Close Ashawo joint"],
+      "price": "20000000",
+      "accommodation_type": "home rent",
+      "size": "1000",
+      "rentStatus": "available",
+      "rentType": "home rent",
+      "createdAt": { "seconds": 1721907715, "nanoseconds": 749000000 },
+      "date": 1722879013318,
+      "userId": "tk39t7Z5JZaa2yPBfhpBXCyFkdl1",
+      "bedrooms": "5",
+      "imageNames": ["20240716_114135.jpg"],
+      "features": ["AC", "Free WiFi "],
+      "name": "Mike joint ",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F20240716_114135.jpg?alt=media&token=62f0b56f-db3e-4967-b17b-4c7109e4e658"
+      ],
+      "bathrooms": "6",
+      "rules": [
+        "Don't urinate in my room ",
+        "No fufu pounding ",
+        "Pay your bills on time "
+      ],
+      "neighborhood": ["Stadium "],
+      "status": "rejected",
+      "neighboring_campus": "2",
+      "id": "aewyfMgCV4gkLYCVVDWY"
+    },
+    {
+      "description": "This luxurious 5-bedroom house is perfect for those who love to entertain. The house features a private pool, a spacious living room, and a fully equipped kitchen. The house is also close to several restaurants and shops.",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "date": 1722879013648,
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F2a-min.png?alt=media&token=3a62ee1d-e570-42b6-89f2-9c713278ee12",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F2b-min.png?alt=media&token=6d279d2c-9d25-42b1-b2d8-2d09e40faef1"
+      ],
+      "id": "aizo0JWZexLwaKUNumFY",
+      "comments": "Charming place with a cozy atmosphere.",
+      "rentStatus": "available",
+      "status": "rejected",
+      "bathrooms": 4,
+      "name": "Luxury 5-Bedroom House with a Private Pool",
+      "bedrooms": 5,
+      "rentType": "home rent",
+      "location": "456 Elm St, Accra, Ghana",
+      "gpsPosition": { "long": -118.243683, "lat": 34.052235 },
+      "year_built": 2018,
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "rules": "Quiet hours start at 10pm.",
+      "image_prompt": "Create an image of a luxurious 5-bedroom house with a private pool.",
+      "features": [
+        "Private pool",
+        "Spacious living room",
+        "Fully equipped kitchen",
+        "Close to restaurants and shops"
+      ],
+      "rating": 4.6,
+      "size": "5,000 sqft",
+      "price": "$1,000,000"
+    },
+    {
+      "name": "boso hostel",
+      "description": "jhfkhjhfhhfhkjjjjj",
+      "createdAt": { "seconds": 1720709687, "nanoseconds": 373000000 },
+      "price": "2000",
+      "userId": "YtZTwc6rdRVMgfxFvLrIBWVWn802",
+      "accommodation_type": "hostel rent",
+      "rentType": "hostel rent",
+      "status": "rejected",
+      "date": 1722879013955,
+      "bedrooms": "7",
+      "amenities": ["schools arround", "parking lot"],
+      "imageNames": [
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_0 (2).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_1 (2).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_2 (2).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_3 (2).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_1 (1).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_2 (1).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_3 (1).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_0 (1).jpg",
+        "Default_Create_a_background_image_for_a_chat_section_in_a_web_0.jpg"
+      ],
+      "rules": ["no smoking", "no pets allowed"],
+      "neighborhood": ["close to hospital"],
+      "size": "350 sqft",
+      "location": "Dzorwulu Residential Area, Accra , Ghana",
+      "gpsPosition": { "lat": 7.351503333333332, "long": -2.3407183333333332 },
+      "bathrooms": "67675",
+      "neighboring_campus": "University of Energy and Natural Resources (UENR)",
+      "rentStatus": "available",
+      "features": ["air conditioning", "swimming pool"],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_0%20(2).jpg?alt=media&token=ae048f3c-07d9-4163-a6c4-0ea06fbea334",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_1%20(2).jpg?alt=media&token=40c77ef3-533e-49b0-a786-69721c194b17",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_2%20(2).jpg?alt=media&token=e9daa9fd-caa6-4989-b40f-22642860f2e4",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_3%20(2).jpg?alt=media&token=b56ed7a7-fff9-4cb5-bb62-050fe6658523",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_1%20(1).jpg?alt=media&token=d5817367-6473-4784-bb8f-67d068bff351",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_2%20(1).jpg?alt=media&token=b7664422-34b0-4946-8388-ad61f19c4380",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_3%20(1).jpg?alt=media&token=1ea0d9fe-f4a5-4eda-a18d-88d248dc40ba",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_0%20(1).jpg?alt=media&token=ec45e98d-2c45-4b50-8a54-d24b9cb1df08",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2FDefault_Create_a_background_image_for_a_chat_section_in_a_web_0.jpg?alt=media&token=7213f4cb-0036-478a-92bb-990a1a2595cc"
+      ],
+      "id": "cPHsFVvZObrGDrixkUXV"
+    },
+    {
+      "description": "This spacious 3-bedroom house is perfect for families who love to spend time outdoors. The house features a large backyard, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F12a-min.png?alt=media&token=94699a60-a38a-4fb3-ac2b-2035f29eeed6",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F12b-min.png?alt=media&token=6d87c0b2-2a6a-443d-ab7f-16d61da527ab"
+      ],
+      "year_built": 2014,
+      "rentStatus": "available",
+      "bedrooms": 3,
+      "location": "2626 Elm St, Accra, Ghana",
+      "rating": 4.3,
+      "gpsPosition": { "lat": 41.878113, "long": -87.629799 },
+      "price": "$550,000",
+      "name": "Spacious 3-Bedroom House with a Large Backyard",
+      "features": [
+        "Large backyard",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "date": 1722879014268,
+      "bathrooms": 2,
+      "rules": "Parking available for one vehicle only.",
+      "size": "2,500 sqft",
+      "rentType": "home rent",
+      "image_prompt": "Create an image of a spacious 3-bedroom house with a large backyard.",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "id": "ekcgZKsaKkAXzOuYuQ9E",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "comments": "Ideal for business trips, quiet and comfortable.",
+      "status": "rejected"
+    },
+    {
+      "location": "123 Main St, Accra, Ghana",
+      "rating": 4.8,
+      "rentType": "hostel rent",
+      "id": "ff2lKtKXa4nMCuhhpjiN",
+      "rentStatus": "available",
+      "gpsPosition": { "long": -74.005974, "lat": 40.712776 },
+      "size": "2,500 sqft",
+      "year_built": 2020,
+      "bedrooms": 3,
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F1a-min.png?alt=media&token=e820dab5-f957-42d4-9576-8d16b248320a",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F1b-min.png?alt=media&token=53582c2c-657d-4e76-8421-3a4b102b9c60"
+      ],
+      "status": "rejected",
+      "features": [
+        "Spacious living room",
+        "Fully equipped kitchen",
+        "Beautiful garden",
+        "Close to public transportation",
+        "Walking distance to restaurants and shops"
+      ],
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "price": "$500,000",
+      "comments": "Stunning city views and modern amenities.",
+      "name": "Modern 3-Bedroom House in the Heart of the City",
+      "bathrooms": 2,
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "date": 1722879014577,
+      "description": "This modern 3-bedroom house is located in the heart of the city and is perfect for families. The house features a spacious living room, a fully equipped kitchen, and a beautiful garden. The house is also close to public transportation and is within walking distance of several restaurants and shops.",
+      "image_prompt": "Create an image of a modern 3-bedroom house with a beautiful garden in the heart of the city.",
+      "rules": "No smoking. No pets allowed."
+    },
+    {
+      "comments": "Modern amenities and a state-of-the-art gym.",
+      "features": [
+        "Private pool",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "location": "2828 Oak St, Accra, Ghana",
+      "rules": "Use of gym facilities until 9pm.",
+      "description": "This luxurious 6-bedroom house is perfect for those who love to entertain. The house features a private pool, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "rentType": "home rent",
+      "price": "$1,200,000",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F13a-min.png?alt=media&token=a8906df1-090d-4097-b068-26847f2d9778",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F13b-min.png?alt=media&token=ee29aac7-6438-4e93-ad97-83cb2450af0a"
+      ],
+      "year_built": 2019,
+      "name": "Luxury 6-Bedroom House with a Private Pool",
+      "id": "hv40OwzhAIXQj8AP8QgQ",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "bathrooms": 5,
+      "gpsPosition": { "lat": 51.50735, "long": -0.127758 },
+      "rating": 4.9,
+      "size": "6,000 sqft",
+      "bedrooms": 6,
+      "image_prompt": "Create an image of a luxurious 6-bedroom house with a private pool.",
+      "date": 1722879014897,
+      "status": "rejected",
+      "rentStatus": "available"
+    },
+    {
+      "bathrooms": 5,
+      "year_built": 2019,
+      "features": [
+        "Pool",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "date": 1722879015300,
+      "bedrooms": 6,
+      "size": "5,000 sqft",
+      "id": "oCr2U2FOmLNiWs3LSY9v",
+      "status": "rejected",
+      "rentStatus": "available",
+      "image_prompt": "Create an image of a modern 6-bedroom house with a pool.",
+      "rating": 4.5,
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "price": "$900,000",
+      "location": "4040 Pine St, Accra, Ghana",
+      "gpsPosition": { "lat": -33.86882, "long": 151.209296 },
+      "description": "This modern 6-bedroom house is perfect for those who love to swim. The house features a pool, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "rules": "Guests must register with security.",
+      "comments": "Secure building with friendly staff.",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F19a-min.jpeg?alt=media&token=52aae608-d169-4878-a2f4-72894e387635",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F19b-min.jpeg?alt=media&token=c3d81771-d320-4b76-8ffd-f2d0170ab0a5"
+      ],
+      "name": "Modern 6-Bedroom House with a Pool",
+      "rentType": "hostel rent"
+    },
+    {
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "size": "4,000 sqft",
+      "image_prompt": "Create an image of a spacious 5-bedroom house with a large backyard.",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F16a-min.jpg?alt=media&token=c86d3613-68d4-4ca4-aeed-4e4f981033d5",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F16b-min.jpg?alt=media&token=a25dbd3f-29c4-4c3d-a9d3-2f9c5bc0dc48"
+      ],
+      "id": "oz97K97tWFXHiuytxu3b",
+      "rentType": "hostel rent",
+      "rules": "No barbecues on the terrace.",
+      "bedrooms": 5,
+      "description": "This spacious 5-bedroom house is perfect for families who love to spend time outdoors. The house features a large backyard, a fully equipped kitchen, and a beautiful living room. The house is also close to several restaurants and shops.",
+      "comments": "The terrace is perfect for morning coffee.",
+      "year_built": 2018,
+      "gpsPosition": { "lat": 43.653225, "long": -79.383186 },
+      "rentStatus": "available",
+      "name": "Spacious 5-Bedroom House with a Large Backyard",
+      "rating": 4.4,
+      "price": "$900,000",
+      "bathrooms": 4,
+      "location": "3434 Oak St, Accra, Ghana",
+      "date": 1722879015559,
+      "status": "rejected",
+      "features": [
+        "Large backyard",
+        "Fully equipped kitchen",
+        "Beautiful living room",
+        "Close to restaurants and shops"
+      ],
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ]
+    },
+    {
+      "bathrooms": 3,
+      "date": 1722879015828,
+      "image_prompt": "Create an image of a charming 4-bedroom house with a beautiful garden.",
+      "size": "2,500 sqft",
+      "rating": 4.1,
+      "rentStatus": "available",
+      "name": "Charming 4-Bedroom House with a Garden",
+      "comments": "Cozy and close to local bike trails.",
+      "year_built": 2017,
+      "price": "$400,000",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "id": "v0yDs5yvC3Xy05R5Ta4y",
+      "location": "3838 Oak St, Accra, Ghana",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F18a-min.jpeg?alt=media&token=6c08ec48-3595-4ebe-b9ed-94526ca7fee6",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F18b-min.jpeg?alt=media&token=9761a37b-80e1-477f-bbb1-cdaede6b2044"
+      ],
+      "description": "This charming 4-bedroom house is perfect for those who love to relax in the garden. The house features a beautiful garden, a fully equipped kitchen, and a comfortable living room. The house is also close to several restaurants and shops.",
+      "bedrooms": 4,
+      "features": [
+        "Beautiful garden",
+        "Fully equipped kitchen",
+        "Comfortable living room",
+        "Close to restaurants and shops"
+      ],
+      "status": "rejected",
+      "gpsPosition": { "lat": 37.774929, "long": -122.419416 },
+      "rentType": "hostel rent",
+      "rules": "No bicycles in the hallway."
+    },
+    {
+      "features": [
+        "Fireplace",
+        "Fully equipped kitchen",
+        "Beautiful garden",
+        "Close to restaurants and shops"
+      ],
+      "status": "rejected",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "year_built": 2015,
+      "rentType": "hostel rent",
+      "rentStatus": "available",
+      "rules": "No loud music after 9pm.",
+      "price": "$250,000",
+      "name": "Cozy 2-Bedroom House with a Fireplace",
+      "size": "1,500 sqft",
+      "bathrooms": 1,
+      "date": 1722879016085,
+      "location": "789 Oak St, Accra, Ghana",
+      "bedrooms": 2,
+      "image_prompt": "Create an image of a cozy 2-bedroom house with a fireplace.",
+      "gpsPosition": { "long": 2.352222, "lat": 48.856613 },
+      "comments": "Perfect for a weekend getaway, close to nature.",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "description": "This cozy 2-bedroom house is perfect for those who love to relax by the fire. The house features a fireplace, a fully equipped kitchen, and a beautiful garden. The house is also close to several restaurants and shops.",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F3a-min.png?alt=media&token=c6f3e698-bdcd-4a9d-aa85-af631c08ed22",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F3b-min.png?alt=media&token=05103fef-919c-4677-9610-afc404bec92d"
+      ],
+      "rating": 4.7,
+      "id": "v3Jbo4yLJCHi0T9Z4RDz"
+    },
+    {
+      "size": "2,000 sqft",
+      "bathrooms": 2,
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "comments": "A quiet, pet-friendly apartment with a lovely garden.",
+      "bedrooms": 3,
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "price": "$400,000",
+      "gpsPosition": { "lat": 55.755825, "long": 37.617298 },
+      "description": "This charming 3-bedroom house is perfect for those who love to relax on the porch. The house features a wraparound porch, a fully equipped kitchen, and a beautiful garden. The house is also close to several restaurants and shops.",
+      "id": "v6HQZcbBTyLi7wlzOPRg",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F5a-min.png?alt=media&token=d02def49-ad61-4469-bd72-9b86031f26ac",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F5b-min.png?alt=media&token=c9d23684-798b-43da-a37c-436523ec5262"
+      ],
+      "year_built": 2012,
+      "status": "rejected",
+      "rentType": "hostel rent",
+      "date": 1722879018898,
+      "image_prompt": "Create an image of a charming 3-bedroom house with a wraparound porch.",
+      "rating": 4.4,
+      "rules": "Pets allowed with prior approval.",
+      "rentStatus": "available",
+      "features": [
+        "Wraparound porch",
+        "Fully equipped kitchen",
+        "Beautiful garden",
+        "Close to restaurants and shops"
+      ],
+      "location": "1212 Maple St, Accra, Ghana",
+      "name": "Charming 3-Bedroom House with a Wraparound Porch"
+    },
+    {
+      "id": "xMCt6iWPZ4bJXB5mLVDE",
+      "bathrooms": 1,
+      "name": "Cozy 2-Bedroom House with a Garden",
+      "features": [
+        "Beautiful garden",
+        "Fully equipped kitchen",
+        "Comfortable living room",
+        "Close to restaurants and shops"
+      ],
+      "bedrooms": 2,
+      "rentType": "hostel rent",
+      "gpsPosition": { "lat": 41.902782, "long": 12.496366 },
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F7a-min.png?alt=media&token=b0ecb319-5f09-4706-861e-4f5ed415bff4",
+        "https://firebasestorage.googleapis.com/v0/b/accommodationlink-17176.appspot.com/o/house_images%2F7b-min.png?alt=media&token=ddc178df-d814-4299-94b6-e4211bd17b41"
+      ],
+      "status": "rejected",
+      "image_prompt": "Create an image of a cozy 2-bedroom house with a beautiful garden.",
+      "neighborhood": [
+        "Close to schools",
+        "Close to parks",
+        "Close to hospitals",
+        "Close to shopping centers"
+      ],
+      "description": "This cozy 2-bedroom house is perfect for those who love to relax in the garden. The house features a beautiful garden, a fully equipped kitchen, and a comfortable living room. The house is also close to several restaurants and shops.",
+      "amenities": [
+        "Air conditioning",
+        "Central heating",
+        "Washer and dryer",
+        "Parking",
+        "24-hour security"
+      ],
+      "location": "1616 Pine St, Accra, Ghana",
+      "year_built": 2010,
+      "size": "1,000 sqft",
+      "date": 1722879019228,
+      "rentStatus": "available",
+      "comments": "Centrally located with easy access to public transport.",
+      "rules": "Check-in after 3pm. Check-out by 11am.",
+      "rating": 4.5,
+      "price": "$200,000"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "accomodation-link"
+version = "0.1.0"
+description = "A recommdation and price estimation backend service for accomodation-link, a web app for finding and procuring accomodation"
+authors = ["DOMINIC MAABOBRA TUOLONG <tuolongdominic@gmail.com>"]
+license = "BSD 3-Clause"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.112.2"
+scikit-learn = "^1.5"
+pandas = "^2.2.2"
+uvicorn = "^0.30.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
