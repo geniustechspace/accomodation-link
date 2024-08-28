@@ -1,22 +1,19 @@
-import json
-from pathlib import Path
-
-import pandas as pd
-
 from models.price_estimation import PriceEstimator
+from models.recommendation import RecommendationModel
+from utils import read_json_data
+
+__df = read_json_data()
 
 
-def deploy_price_estimator_model(data_path: str | Path):
+def get_df():
+    return __df.copy()
+
+
+def deploy_price_estimator_model():
     print("===============================================")
     print("deploying price_estimator")
-    with open(data_path, "r") as file:
-        json_data = json.load(file)
 
-    # Extracting the list of records
-    records = json_data["data"]
-
-    # Creating a DataFrame
-    df = pd.DataFrame(records)
+    df = get_df()
 
     price_estimator = PriceEstimator(df)
     price_estimator.preprocess()
@@ -24,8 +21,6 @@ def deploy_price_estimator_model(data_path: str | Path):
 
     # Optional: Tune the model
     price_estimator.tune_model()
-
-    print(price_estimator.X_test)
 
     # Evaluate the model
     y_pred = price_estimator.estimate(price_estimator.X_test)
@@ -39,3 +34,25 @@ def deploy_price_estimator_model(data_path: str | Path):
     print("===============================================")
 
     return price_estimator
+
+
+def deploy_property_recommendation_model():
+    print("===============================================")
+    print("deploying property_recommendation_model")
+
+    df = get_df()
+
+    pr_model = RecommendationModel(df)
+    pr_model.preprocess()
+    pr_model.train_model()
+
+    # Save the trained model
+    pr_model.deploy("property_recommendation_model.pkl")
+    print(
+        (
+            "property_recommendation_model deployed at => 'property_recommendation_model.pkl'"
+        )
+    )
+    print("===============================================")
+
+    return pr_model

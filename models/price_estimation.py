@@ -1,5 +1,4 @@
 import logging
-from pathlib import Path
 from typing import Any
 import joblib
 import pandas as pd
@@ -11,35 +10,22 @@ from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
-logging.basicConfig(filename=__name__, level=logging.INFO)
+from utils import clean_data, read_json_data
 
 
-def read_data(source: str | Path):
-    if type(source) is str:
-        match (source.split(".")[-1]):
-            case "csv":
-                return pd.read_csv(source)
-            case "json":
-                return pd.read_json(source)
-            case "xlc":
-                return pd.read_excel(source)
+logger = logging.getLogger(__name__)
 
 
 class PriceEstimator:
 
-    def __init__(self, data: str | pd.DataFrame, features: list[str] = None) -> None:
-        self._df = data if isinstance(data, pd.DataFrame) else read_data(data)
-
-        if self._df is None:
+    def __init__(
+        self, data: str | pd.DataFrame = None, features: list[str] = None
+    ) -> None:
+        if data is None:
             return
-        # Convert size and price to numeric values
-        self._df["size"] = (
-            self._df["size"].str.replace(",", "").str.extract(r"(\d+)").astype(float)
-        )
-        self._df["price"] = (
-            self._df["price"].str.replace("[\$,]", "", regex=True).astype(float)
-        )
-        self._df["price"] = np.log1p(self._df["price"])
+
+        self._df = data if isinstance(data, pd.DataFrame) else read_json_data(data)
+        self._df = clean_data(self._df, logger)
 
         # Define the features for price prediction
         self.features = (
@@ -60,12 +46,6 @@ class PriceEstimator:
     def preprocess(
         self, df: pd.DataFrame = None, transformers: list[tuple[str, Any, list]] = None
     ):
-        _df = self._df if df is None else df
-
-        # Extract latitude and longitude
-        _df["latitude"] = _df["gpsPosition"].apply(lambda x: x["lat"])
-        _df["longitude"] = _df["gpsPosition"].apply(lambda x: x["long"])
-
         _transformers = (
             [
                 (
@@ -92,11 +72,9 @@ class PriceEstimator:
 
         return self.preprocessor
 
-    def train_model(self, df: pd.DataFrame = None, test_size=0.2, random_state=42):
-        _df = self._df if df is None else df
-
+    def train_model(self, test_size=0.2, random_state=42):
         # Split the data into training and testing sets
-        X, y = _df[self.features], _df["price"]
+        X, y = self._df[self.features], self._df["price"]
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
             X, y, test_size=test_size, random_state=random_state
         )
@@ -115,8 +93,8 @@ class PriceEstimator:
     def estimate(self, data):
 
         # Predict on the provided data
-        y_pred = self.price_pipeline.predict(data)
-        return y_pred
+        pred = self.price_pipeline.predict(data)
+        return pred
 
     def get_performance(self, pred, y_test=None):
         y_test = y_test if y_test is not None else self.y_test
@@ -164,7 +142,7 @@ class PriceEstimator:
     @classmethod
     def load_model(cls, model_path="price_estimation_model.pkl"):
         try:
-            logging.info(f"Loading model from {model_path}")
+            logger.info(f"Loading model from {model_path}")
             loaded_pipeline = joblib.load(model_path)
             instance = cls(
                 data=None
@@ -172,8 +150,8 @@ class PriceEstimator:
             instance.price_pipeline = loaded_pipeline
             return instance
         except FileNotFoundError:
-            logging.error(f"Model file '{model_path}' not found.")
+            logger.error(f"Model file '{model_path}' not found.")
             return None
         except Exception as e:
-            logging.error(f"Error loading model: {str(e)}")
+            logger.error(f"Error loading model: {str(e)}")
             return None
