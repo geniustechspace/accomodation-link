@@ -43,9 +43,7 @@ class PriceEstimator:
             else features
         )
 
-    def preprocess(
-        self, df: pd.DataFrame = None, transformers: list[tuple[str, Any, list]] = None
-    ):
+    def preprocess(self, transformers: list[tuple[str, Any, list]] = None):
         _transformers = (
             [
                 (

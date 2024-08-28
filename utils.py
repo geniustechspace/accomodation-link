@@ -22,41 +22,38 @@ def read_json_data(data_path: str | Path = "./data/properties.json"):
     return df
 
 
-def clean_data(df: pd.DataFrame, logging: logging):
-    # Convert size and price to numeric values
-
-    df_columns = df.columns
-
-    # Handle missing fields and clean data
+def clean_data(df: pd.DataFrame, logging: logging) -> pd.DataFrame:
     try:
-        if "size" in df_columns and isinstance(df["size"], str):
-            df["size"] = (
-                df["size"].str.replace(",", "").str.extract(r"(\d+)").astype(float)
+        # Convert size to numeric by extracting digits and converting to float
+        if "size" in df.columns:
+            df["size"] = df["size"].apply(
+                lambda x: (
+                    float(x.replace(",", "").split()[0]) if isinstance(x, str) else x
+                )
             )
 
-        if "price" in df_columns and isinstance(df["price"], str):
+        # Convert price to numeric by removing symbols and converting to float
+        if "price" in df.columns:
             df["price"] = df["price"].str.replace("[\$,]", "", regex=True).astype(float)
             df["price"] = np.log1p(df["price"])
 
-        # Extract latitude and longitude
-        if "gpsPosition" in df_columns:
-            df["latitude"] = df["gpsPosition"].apply(lambda x: x["lat"])
-            df["longitude"] = df["gpsPosition"].apply(lambda x: x["long"])
+        # Extract latitude and longitude from gpsPosition
+        if "gpsPosition" in df.columns:
+            df["latitude"] = df["gpsPosition"].apply(
+                lambda x: x["lat"] if isinstance(x, dict) else np.nan
+            )
+            df["longitude"] = df["gpsPosition"].apply(
+                lambda x: x["long"] if isinstance(x, dict) else np.nan
+            )
 
-        if "bathrooms" in df_columns:
-            df["bathrooms"] = pd.to_numeric(df["bathrooms"], errors="coerce")
+        # Convert other numerical fields to numeric
+        for col in ["bathrooms", "bedrooms", "year_built", "rating"]:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors="coerce")
 
-        if "bedrooms" in df_columns:
-            df["bedrooms"] = pd.to_numeric(df["bedrooms"], errors="coerce")
-
-        if "year_built" in df_columns:
-            df["year_built"] = pd.to_numeric(df["year_built"], errors="coerce")
-
-        if "rating" in df_columns:
-            df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
-
-        if "rules" in df_columns:
-            df["rules"] = [df["rules"]] if isinstance(df["rules"], str) else df["rules"]
+        # Convert rules to list if it's a string
+        if "rules" in df.columns and isinstance(df["rules"], str):
+            df["rules"] = [df["rules"]]
 
         return df
 
