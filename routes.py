@@ -8,8 +8,11 @@ from models import PriceEstimator, RecommendationModel
 from schemas import PropertyData
 from utils import clean_data
 
-
-logging.basicConfig(filename=__name__, level=logging.INFO)
+logging.basicConfig(
+    filename="app.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 router = APIRouter()
 
@@ -46,10 +49,10 @@ class PriceEstimationResponse(BaseModel):
     estimated_price: float
 
 
-@router.post("/estimate-price", response_model=PriceEstimationResponse)
-async def estimate_price(request: Union[PriceEstimationRequest, PropertyData]):
+@router.post("/estimate-current-price", response_model=PriceEstimationResponse)
+async def estimate_current_price(request: Union[PropertyData, PriceEstimationRequest]):
     try:
-        loaded_model = PriceEstimator.load_model("price_estimation_model.pkl")
+        loaded_model = PriceEstimator.load_model()
     except FileNotFoundError:
         logging.error("Model file not found.")
         raise HTTPException(status_code=500, detail="Model file not found.")
@@ -59,14 +62,55 @@ async def estimate_price(request: Union[PriceEstimationRequest, PropertyData]):
 
     try:
         new_data = pd.DataFrame([request.model_dump()])
-        # Clean data
         new_data = clean_data(new_data, logging)
-        logging.info(f"New data for prediction: {new_data}")
+        logging.info(f"New data for current price prediction: {new_data}")
+
         estimated_price = loaded_model.estimate(new_data)[0]
         estimated_price = round(np.expm1(estimated_price), 2)
+
+        logging.info(f"Estimated current price: {estimated_price}")
         return PriceEstimationResponse(estimated_price=estimated_price)
+
     except Exception as e:
-        logging.error(f"Error during prediction: {str(e)}")
+        logging.error(f"Error during current price prediction: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/estimate-future-price", response_model=PriceEstimationResponse)
+async def estimate_future_price(
+    request: Union[PropertyData, PriceEstimationRequest], future_year: int = 2030
+):
+    if future_year < 2024:  # Example validation
+        raise HTTPException(
+            status_code=400, detail="Future year must be greater than the current year."
+        )
+
+    try:
+        loaded_model = PriceEstimator.load_model()
+    except FileNotFoundError:
+        logging.error("Model file not found.")
+        raise HTTPException(status_code=500, detail="Model file not found.")
+    except Exception as e:
+        logging.error(f"Error loading model: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+    try:
+        new_data = pd.DataFrame([request.model_dump()])
+        new_data = clean_data(new_data, logging)
+        logging.info(f"New data for future price prediction: {new_data}")
+
+        predicted_price = loaded_model.estimate(
+            new_data, future=True, future_year=future_year
+        )[0]
+        predicted_price = round(np.expm1(predicted_price), 2)
+
+        logging.info(
+            f"Predicted future price for year {future_year}: {predicted_price}"
+        )
+        return PriceEstimationResponse(estimated_price=predicted_price)
+
+    except Exception as e:
+        logging.error(f"Error during future price prediction: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -82,7 +126,6 @@ class RecommendationResponse(BaseModel):
 @router.post("/recommendations", response_model=RecommendationResponse)
 async def recommendations(request: RecommendationRequest):
     try:
-        # Load the trained model
         loaded_model = RecommendationModel.load_model(
             "property_recommendation_model.pkl"
         )

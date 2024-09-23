@@ -19,18 +19,29 @@ def deploy_price_estimator_model():
     price_estimator.preprocess()
     price_estimator.train_model()
 
-    # Optional: Tune the model
-    price_estimator.tune_model()
+    # # Optional: Tune the model
+    # price_estimator.tune_model()
+    # cross_validate = price_estimator.cross_validate()
+    # print("cross_validate: ", cross_validate)
+    feature_importance = price_estimator.feature_importance()
+    print("feature_importance:", feature_importance)
+    future_feature_importance = price_estimator.feature_importance(future=True)
+    print("future_feature_importance:", future_feature_importance)
 
     # Evaluate the model
     y_pred = price_estimator.estimate(price_estimator.X_test)
     print("Estimation: ", y_pred)
     mse, r2 = price_estimator.get_performance(y_pred)
     print(f"MSE: {mse}, R²: {r2}")
+    
+    # Evaluate the model
+    y_pred = price_estimator.estimate(price_estimator.X_test, future=True, future_year=2030)
+    print("Future Estimation: ", y_pred)
+    mse, r2 = price_estimator.get_performance(y_pred, future=True)
+    print(f"MSE: {mse}, R²: {r2}")
 
     # Save the trained model
-    price_estimator.deploy("price_estimation_model.pkl")
-    print(("price_estimator deployed at => 'price_estimation_model.pkl'"))
+    price_estimator.deploy()
     print("===============================================")
 
     return price_estimator

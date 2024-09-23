@@ -23,6 +23,13 @@ def read_json_data(data_path: str | Path = "./data/properties.json"):
 
 
 def clean_data(df: pd.DataFrame, logging: logging) -> pd.DataFrame:
+    """
+    Cleans the DataFrame by handling missing values and formatting columns.
+
+    :param df: Raw pandas DataFrame.
+    :param logger: Logger object for logging.
+    :return: Cleaned pandas DataFrame.
+    """
     try:
         # Convert size to numeric by extracting digits and converting to float
         if "size" in df.columns:
@@ -34,8 +41,12 @@ def clean_data(df: pd.DataFrame, logging: logging) -> pd.DataFrame:
 
         # Convert price to numeric by removing symbols and converting to float
         if "price" in df.columns:
-            df["price"] = df["price"].str.replace("[\$,]", "", regex=True).astype(float)
+            df["price"] = df["price"].str.replace("[$,]", "", regex=True).astype(float)
             df["price"] = np.log1p(df["price"])
+
+        if "date" in df.columns:
+            df["date"] = pd.to_datetime(df["date"], unit="ms")
+            df["year_listed"] = df["date"].dt.year
 
         # Extract latitude and longitude from gpsPosition
         if "gpsPosition" in df.columns:
@@ -60,3 +71,42 @@ def clean_data(df: pd.DataFrame, logging: logging) -> pd.DataFrame:
     except Exception as e:
         logging.error(f"Error cleaning input data: {str(e)}")
         return None
+
+
+# def clean_data(df: pd.DataFrame, logger: logging.Logger) -> pd.DataFrame:
+#     """
+#     Cleans the DataFrame by handling missing values and formatting columns.
+
+#     :param df: Raw pandas DataFrame.
+#     :param logger: Logger object for logging.
+#     :return: Cleaned pandas DataFrame.
+#     """
+#     try:
+#         # Drop duplicates
+#         initial_shape = df.shape
+#         df = df.drop_duplicates()
+#         logger.info(f"Dropped duplicates: {initial_shape} -> {df.shape}")
+
+#         # Handle missing values
+#         df = df.dropna(
+#             subset=[
+#                 "price",
+#                 "size",
+#                 "year_built",
+#                 "bedrooms",
+#                 "bathrooms",
+#                 "rating",
+#                 "gpsPosition",
+#                 "rentType",
+#             ]
+#         )
+#         logger.info(
+#             f"Dropped rows with missing essential values. New shape: {df.shape}"
+#         )
+
+#         # Additional cleaning steps can be added here
+
+#         return df
+#     except Exception as e:
+#         logger.error(f"Error cleaning data: {str(e)}")
+#         raise
