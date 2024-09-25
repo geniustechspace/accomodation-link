@@ -1,5 +1,6 @@
 import logging
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 from models import deploy_price_estimator_model, deploy_property_recommendation_model
@@ -19,15 +20,24 @@ logger = logging.getLogger(__name__)
 
 
 def start_app():
-    app = FastAPI(
+    _app = FastAPI(
         title="ACCOMMODATION LINK",
         description="PROPERTY RECOMMENDATION AND PRICE ESTIMATION BACKEND SERVICE - WORKS WITH BOTH IMAGES AND VIDEOS",
         version="0.1.0",
     )
 
-    app.include_router(routes.router)
+    origins = ["https://accomodation-link.vercel.app/", "*", "localhost"]
 
-    return app
+    _app.include_router(routes.router)
+    _app.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_credentials=True,
+        allow_headers=["*"],
+        allow_methods=["*"]
+    )
+
+    return _app
 
 
 app = start_app()
